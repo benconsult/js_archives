@@ -1,7 +1,5 @@
-
-//@ strings match with |
-const txt = 'Milk and Bannana are very good for the body. Dringing milk and eating bannana is not too bad unless you dring Milk too much'
-let pattern = /[Mm]ilk|[Bb]annana/g
-let output = txt.match(pattern)
-
+//Escape characters 
+let pattern = /\d/g
+let str = 'L was born on the 3rd of the 9th month'
+let output = str.match(pattern)
 console.log(output)
