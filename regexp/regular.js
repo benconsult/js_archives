@@ -21,8 +21,15 @@ console.log(output)
 
 //match = all capturing groups or null is not found. Note: used with string
 //if global flag, returns all groups , else return pattern, index, input, group,
-*/
+
 let str = 'coding is my passion'
 let pattern = /myt/g
 let output = str.match(pattern)
+console.log(output)
+*/
+
+// serch method - return  index of that string, -1 if fail
+let str = 'coding is my passion'
+let pattern = /my/g
+let output = str.search(pattern)
 console.log(output)
