@@ -1,35 +1,7 @@
-/*takes 2 params - pattern(text) and flag (optional)
-RegExp constructor or usinng 2 //
-gimsuy
+//replace - search for a pattern and replace with a substring
+const str = 'for God so love the world that he gave his only begotten son , that whosoever believth\
+beliwveth in him should  not perish\
+but have eternal life'
 
-
-//using RegExp object
-let pattern  = 'love'
-let flag = 'gi'
-let regExp = new RegExp(pattern,flag)
-
-//without regext constructor
-
-let regexp = /love/gi
-
-//RegExp method
-//test()  - without param
-let str = 'coding is my passion'
-let pattern = /my/
-let output = pattern.test(str)
-console.log(output)
-
-//match = all capturing groups or null is not found. Note: used with string
-//if global flag, returns all groups , else return pattern, index, input, group,
-
-let str = 'coding is my passion'
-let pattern = /myt/g
-let output = str.match(pattern)
-console.log(output)
-*/
-
-// serch method - return  index of that string, -1 if fail
-let str = 'coding is my passion'
-let pattern = /my/g
-let output = str.search(pattern)
+output = str.replace(/God|god/, 'Yesua')
 console.log(output)
